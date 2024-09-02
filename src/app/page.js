@@ -296,15 +296,6 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className={`${styles.attackCountContainer} my-4`}>
-        <h2 className="text-center">Number of Attacks</h2>
-        {attackCount !== null ? (
-          <p className={`${styles.attackCount} text-center`}>{attackCount}</p>
-        ) : (
-          <p>Loading attack data...</p>
-        )}
-      </div>
-
       <div className="text-center">
         <button
           className="btn btn-primary"
