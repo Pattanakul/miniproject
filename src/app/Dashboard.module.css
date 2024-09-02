@@ -1,0 +1,137 @@
+/* Dashboard.module.css */
+.dashboard {
+  padding: 20px;
+  background-color: #cbdfc9; /* Slightly softer light green background */
+  min-height: 100vh;
+}
+
+.attackCountContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f88686; /* Softer light green background */
+  border: 2px solid #303130; /* Lighter green border */
+  border-radius: 16px; /* Slightly larger border radius for a softer look */
+  width: 50%;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1); /* Slightly deeper shadow for more depth */
+}
+
+.attackCount {
+  font-size: 3rem; /* Increase font size for emphasis */
+  font-weight: 700; /* Bolder font weight */
+  color: #1b5e20; /* Slightly darker green for better contrast */
+  margin-top: 15px;
+}
+
+.loadingText {
+  margin-top: 10px;
+  color: #7b8a8b; /* Slightly darker grey for better readability */
+}
+
+.heading {
+  font-size: 32px; /* Slightly larger heading font size */
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #2e7d32; /* Softer dark green */
+}
+
+.chartRow {
+  display: flex;
+  flex-direction: column; /* Keep stacking charts vertically */
+  justify-content: center;
+  align-items: center; 
+  gap: 25px; /* Increase gap between charts */
+  margin-bottom: 35px;
+}
+
+.chartContainer {
+  width: 85%; /* Slightly increase width */
+  max-width: 650px; /* Slightly increase max width */
+  background-color: #ffffff;
+  padding: 25px; /* Increase padding for more space */
+  border-radius: 16px; /* Larger border radius for a rounder look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .chartContainer {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.chartContainer h2 {
+  font-size: 20px; /* Slightly larger title font */
+  margin-bottom: 15px;
+  color: #2e7d32; /* Softer dark green */
+  text-align: center;
+}
+
+.pieChartContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pieChartLegend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 15px; /* Increase padding */
+  background-color: #e8f5e9; /* Softer light green */
+  border-radius: 12px; /* Larger border radius for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pieChartLegend p {
+  margin: 8px 0; /* Increase margin for better spacing */
+  font-size: 16px; /* Slightly larger font size */
+  color: #2e7d32; /* Softer dark green */
+}
+
+.table {
+  background-color: #ffffff;
+  border-radius: 16px; /* Larger border radius for a rounder look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+  margin-top: 25px; /* Increase margin for spacing */
+}
+
+.table thead {
+  background-color: #2e7d32; /* Softer dark green */
+  color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #e8f5e9; /* Softer light green on hover */
+}
+
+.table td, .table th {
+  text-align: center;
+  padding: 15px; /* Increase padding for more space */
+}
+
+.table th {
+  font-weight: 700; /* Bolder font weight */
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .chartRow {
+    flex-direction: column;
+  }
+
+  .chartContainer {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
