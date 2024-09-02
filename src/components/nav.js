@@ -67,10 +67,10 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className={`nav-link ${styles.navLink}`} href="./">Dashboard</Link>
+              <Link className={`nav-link ${styles.navLink}`} href="./">หน้าหลัก</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${styles.navLink}`} href="/History">Historys</Link>
+              <Link className={`nav-link ${styles.navLink}`} href="/History">ประวัติการทำงาน</Link>
             </li>
           </ul>
           <form className="d-flex align-items-center">
