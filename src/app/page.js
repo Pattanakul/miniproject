@@ -305,25 +305,7 @@ export default function Dashboard() {
         </button>
       </div>
 
-      <h2 className={`${styles.heading} text-center my-4`}>
-        Latest Data
-      </h2>
-      <div className="table-responsive">
-        <table
-          className={`table table-striped table-bordered ${styles.table}`}
-        >
-          <thead className="thead-dark">
-            <tr>
-              <th>ID</th>
-              <th>LDR</th>
-              <th>VR</th>
-              <th>Temperature</th>
-              <th>Distance</th>
-              <th>Create At</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
+      
     </div>
   );
 }
