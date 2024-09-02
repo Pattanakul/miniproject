@@ -74,9 +74,9 @@ const Navbar = () => {
             </li>
           </ul>
           <form className="d-flex align-items-center">
-            <button type="button" className={`btn ${styles.btnCustom} me-2`} onClick={() => updateLEDStatus('RGB_ON', setLEDStatus)}>Open System</button>
-            <button type="button" className={`btn ${styles.btnCustom} me-2`} onClick={() => updateLEDStatus('BUZZER_ON', setLEDStatus)}>Buzzer</button>
-            <button type="button" className={`btn ${styles.btnDanger}`} onClick={() => updateLEDStatus('OFF', setLEDStatus)}>Off</button>
+            <button type="button" className={`btn ${styles.btnCustom} me-2`} onClick={() => updateLEDStatus('RGB_ON', setLEDStatus)}>เปิดไฟ</button>
+            <button type="button" className={`btn ${styles.btnCustom} me-2`} onClick={() => updateLEDStatus('BUZZER_ON', setLEDStatus)}>เปิดเสียง</button>
+            <button type="button" className={`btn ${styles.btnDanger}`} onClick={() => updateLEDStatus('OFF', setLEDStatus)}>ปิดทั้งหมด</button>
             <span className={`ms-3 ${ledStatus ? styles.statusOn : styles.statusOff}`}>
               {ledStatus ? 'LED is ON' : 'LED is OFF'}
             </span>
